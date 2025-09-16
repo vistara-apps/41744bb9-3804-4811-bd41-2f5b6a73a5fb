@@ -1,3 +1,5 @@
+import { Experience } from './types';
+
 export const CATEGORIES = [
   'Culinary',
   'Arts & Crafts',
