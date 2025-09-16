@@ -1,18 +1,8 @@
-'use client';
-
-import { useMiniKit } from '@coinbase/minikit';
-import { useAuthenticate } from '@coinbase/onchainkit/minikit';
-import { Avatar } from './ui/Avatar';
-import { Button } from './ui/Button';
-
 interface AppShellProps {
   children: React.ReactNode;
 }
 
 export function AppShell({ children }: AppShellProps) {
-  const { context } = useMiniKit();
-  const { user } = useAuthenticate();
-
   return (
     <div className="min-h-screen bg-bg">
       {/* Header */}
@@ -25,21 +15,11 @@ export function AppShell({ children }: AppShellProps) {
               </div>
               <h1 className="text-xl font-bold text-text-primary">LocalVibe</h1>
             </div>
-            
+
             <div className="flex items-center space-x-4">
-              {user ? (
-                <div className="flex items-center space-x-2">
-                  <Avatar 
-                    name={context?.user?.displayName || user.address} 
-                    size="sm" 
-                  />
-                  <span className="text-sm text-text-secondary hidden sm:block">
-                    {context?.user?.displayName || 'User'}
-                  </span>
-                </div>
-              ) : (
-                <Button size="sm">Connect</Button>
-              )}
+              <button className="btn-primary text-sm px-4 py-2">
+                Connect Wallet
+              </button>
             </div>
           </div>
         </div>
