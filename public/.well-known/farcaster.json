@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "LocalVibe",
+    "subtitle": "Built with Zara",
+    "description": "LocalVibe is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://41744bb938044811bd412f5b6a73a5fb-30fl.vercel.app",
+    "splashImageUrl": "https://41744bb938044811bd412f5b6a73a5fb-30fl.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://41744bb938044811bd412f5b6a73a5fb-30fl.vercel.app/image.png",
+    "tagline": "LocalVibe",
+    "screenshotUrls": [
+      "https://41744bb938044811bd412f5b6a73a5fb-30fl.vercel.app/screenshot.png",
+      "https://41744bb938044811bd412f5b6a73a5fb-30fl.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://41744bb938044811bd412f5b6a73a5fb-30fl.vercel.app/api/webhook"
+  }
+}
